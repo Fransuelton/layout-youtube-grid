@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 50px;
+    background-color: #F7F7F7;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(2, auto) / 543px 330px;
+    gap: 20px;
+}
+
+.video-destaque{
+    grid-area: 1 / 1 / 5 / 2;
+}
+
+.video-destaque .info-video-destaque .titulo-do-video{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.video-destaque .info-video-destaque .visualizacoes{
+    margin: 10px 0;
+}
+
+.video-sugestao{
+    display: flex;
+}
+
+.video-sugestao .info-video-sugestao .titulo-do-video{
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.video-sugestao .info-video-sugestao .nome-canal{
+    font-size: 13px;
+    margin: 5px;
+}
+
+.video-sugestao .info-video-sugestao .visualizacoes{
+    font-size: 13px;
+    margin: 5px;
+}
+
+.video-sugestao .info-video-sugestao .tempo-de-postagem{
+    font-size: 13px;
+    margin: 5px;
+}
