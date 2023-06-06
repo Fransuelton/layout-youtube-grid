@@ -4,56 +4,57 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    padding: 50px;
-    background-color: #F7F7F7;
-}
-
 .container {
+    background-color: #F7F7F7;
     display: grid;
-    grid-template: repeat(2, auto) / 543px 330px;
+    max-width: 900px;
+    grid-template-areas: "video-destaque propaganda"
+                        "video-destaque videos-sugeridos";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
     gap: 20px;
+    padding: 35px;
 }
 
-.video-destaque{
-    grid-area: 1 / 1 / 5 / 2;
+.video-destaque {
+    grid-area: video-destaque;
 }
 
-.video-destaque .info-video-destaque .titulo-do-video{
-    font-weight: 700;
-    font-size: 20px;
-    margin: 10px 0;
+.video-destaque img{
+    margin-bottom: 12px;
+    width: 100%;
 }
 
-.video-destaque .info-video-destaque .visualizacoes{
-    margin: 10px 0;
+.video-destaque .titulo{
+    margin-bottom: 7px;
+    font-size: 18px;
 }
 
-.video-sugestao{
+.video-destaque .visualizacoes{
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.propaganda {
+    grid-area: propaganda;
+}
+
+.videos-sugeridos {
+    grid-area: videos-sugeridos;
+}
+
+.videos-sugeridos .video{
     display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
 }
 
-.video-sugestao .info-video-sugestao .titulo-do-video{
-    font-size: 17px;
-    font-weight: 700;
-    margin-left: 5px;
+.videos-sugeridos .video .titulo{
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
-.video-sugestao .info-video-sugestao .nome-canal{
-    font-size: 13px;
-    margin: 5px;
-}
-
-.video-sugestao .info-video-sugestao .visualizacoes{
-    font-size: 13px;
-    margin: 5px;
-}
-
-.video-sugestao .info-video-sugestao .tempo-de-postagem{
-    font-size: 13px;
-    margin: 5px;
+.videos-sugeridos .video .video p{
+    font-size: 11px;
+    margin-bottom: 5px;
 }
